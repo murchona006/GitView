@@ -62,6 +62,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "get",
+      "rootUri": "file:///C:/Users/DELL/AppData/Local/Pub/Cache/hosted/pub.dev/get-4.6.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "http",
       "rootUri": "file:///C:/Users/DELL/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.0.0",
       "packageUri": "lib/",
@@ -182,7 +188,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-06-20T05:54:09.051561Z",
+  "generated": "2023-06-22T08:58:37.249759Z",
   "generator": "pub",
   "generatorVersion": "3.1.0-230.0.dev"
 }

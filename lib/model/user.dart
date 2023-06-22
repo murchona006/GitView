@@ -1,20 +1,19 @@
 class User {
-  late String username;
-  late String email;
-  late int following;
-  late int follower;
-  late int public_repo;
-  late String joined_date;
+  String? username;
+  String? imageUrl;
+  int? following;
+   int? follower;
+  int? public_repo;
+   String? joined_date;
 
 
   User({
-    required this.username,
-    required this.email,
-    required this.following,
-    required this.follower,
-    required this.public_repo,
-    required this.joined_date
-
+    this.username,
+    this.imageUrl,
+    this.following,
+     this.follower,
+     this.public_repo,
+     this.joined_date,
   });
 
 }
