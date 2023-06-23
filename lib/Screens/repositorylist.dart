@@ -88,7 +88,7 @@ class _RepositoryListState extends State<RepositoryList> {
               ),
 
               SliverPadding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(26.0),
                 sliver: SliverList(
                   delegate: SliverChildBuilderDelegate(
                         (BuildContext context, int index) {
@@ -98,18 +98,27 @@ class _RepositoryListState extends State<RepositoryList> {
                         //print("Repositories found");
                           Get.to(() => RepositoryDetail(repository: repo));
                       },
+
+
                         child: ListTile(
-                          title: Text(repo['name'], style: TextStyle(fontSize:18, fontWeight:FontWeight.w500, color: Colors.blue),),
+                          title: Padding(
+                            padding: const EdgeInsets.only(top:12.0),
+                            child: Text(repo['name'], style: TextStyle(fontSize:18, fontWeight:FontWeight.w500, color: Colors.blue),),
+                          ),
                           subtitle: Text(repo['description'] ?? ''),
                           leading: Icon(Icons.description),
                           trailing: Icon(Icons.arrow_forward),
+
                         ),
+
                       );
+
                     },
                     childCount: repositories.value.length,
                   ),
                 ),
               ),
+
             ],
           ),
 
